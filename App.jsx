@@ -1,34 +1,20 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import Project1 from './Lab1/Project1';
-import Project2 from './Lab1/Project2';
-import Project3 from './Lab1/Project3';
-import Project4 from './Lab1/Project4';
-import Project5 from './Lab1/Project5';
-import Project6 from './Lab1/Project6';
-import Project7 from './Lab1/Project7';
-import Project8 from './Lab1/Project8';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import React from 'react';
+import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
+import Calculator from './lab2th/Calculator';
 const App = () => {
   return (
-    
-    /* //<Project1/>
-    // <Project2/>
-    // <Project3/>
-    //<Project4/>
-    // <Project5/>
-    // <Project6/> */
-    
-    <SafeAreaProvider>
-      {/* <Project7/> */}
-      <Project8/>
-    </SafeAreaProvider>
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="light-content" />
+      <Calculator />
+    </SafeAreaView>
   );
 };
 
-// Render the current screen
-
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default App;
